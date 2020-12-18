@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { connect } from 'react-redux';
 import { fetchItems } from './store/item.actions';
@@ -16,15 +15,7 @@ interface Props {
   fetchItems: any;
 }
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-}));
-
 const ItemList = ({ items, fetchItems }: Props): any => {
-  const classes = useStyles();
-
   return (
     <div className="item-list">
       <div className="item-list__actions">
@@ -37,7 +28,7 @@ const ItemList = ({ items, fetchItems }: Props): any => {
           Mostrar todos
         </Button>
       </div>
-      <div className={classes.root}>
+      <div>
         <Grid container spacing={3}>
           {items.map(item => (
             <Grid item xs={12} sm={10} md={3} lg={4}>
