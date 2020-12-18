@@ -38,7 +38,7 @@ function App() {
               padding: '2%',
             }}
           >
-            <img src="react-marketplace/houm-logo.png" width="100" />
+            <img alt="logo" src="react-marketplace/houm-logo.png" width="100" />
           </div>
           <Divider />
           <Switch>
