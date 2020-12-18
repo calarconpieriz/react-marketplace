@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+### React Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application was built with React, and the Clean Architecture principles. Some of the most important features integrated in this application are the following:
+
+- TypeScript
+- TSX
+- React Library
+- Redux
+- Redux Thunk
+- Material UI
+- SOLID principles
+- GitHub pages deployment configuration and script
 
 ## Available Scripts
 
