@@ -22,7 +22,7 @@ const ItemList = ({ items, fetchItems }: Props): any => {
         <Button
           className="item-list__fetch-cta"
           variant="contained"
-          color="secondary"
+          color="primary"
           onClick={fetchItems}
         >
           Mostrar todos
