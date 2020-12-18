@@ -33,7 +33,7 @@ export default function Item({ name, url }: any) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Link key={name} to={name}>
+        <Link to={name}>
           <Button size="small" color="primary">
             Ver Detalle
           </Button>
