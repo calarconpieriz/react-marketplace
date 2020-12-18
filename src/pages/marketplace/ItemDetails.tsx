@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import { fetchItemDetails } from './store/item.actions';
 import { Link } from 'react-router-dom';
-import { Grid, Paper } from '@material-ui/core';
+import { Avatar, Grid, Paper } from '@material-ui/core';
 import CheckIcon from '@material-ui/icons/Check';
 import PersonIcon from '@material-ui/icons/Person';
 import LoopIcon from '@material-ui/icons/Loop';
@@ -25,6 +25,12 @@ const useStyles = makeStyles((theme: Theme) =>
       textAlign: 'left',
       color: theme.palette.text.secondary,
     },
+    orange: {
+      backgroundColor: '#ff5000',
+    },
+    titleHolder: {
+      display: 'flex',
+    },
   })
 );
 
@@ -37,7 +43,12 @@ const Item = ({ name, details, fetchItemDetails }: any) => {
 
   return (
     <div className={classes.root}>
-      <h1 className={classes.title}>{name}</h1>
+      <h1 className={classes.title}>
+        <span className={classes.titleHolder}>
+          <Avatar className={classes.orange}>P</Avatar>
+          {name}
+        </span>
+      </h1>
       <Grid container spacing={1}>
         <Grid item xs={5}>
           <Paper className={classes.paper} variant="outlined">
