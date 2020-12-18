@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 1%;
 }
 
 .item-list__fetch-cta {
-  margin-top: 200px;
+  margin-top: 100px;
 }
