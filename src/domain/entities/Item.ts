@@ -30,8 +30,12 @@ export interface FetchItemsSuccessResponse {
   results: Item[];
 }
 
+export interface Ability {
+  ability: { name: string };
+}
+
 export interface FetchItemDetailsSuccessResponse {
-  abilities: { ability: { name: string } }[];
+  abilities: Ability[];
   forms: { name: string; url: string }[];
   types: { type: { name: string } }[];
   sprites: {
