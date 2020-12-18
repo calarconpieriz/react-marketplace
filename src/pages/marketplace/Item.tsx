@@ -23,7 +23,7 @@ export default function Item({ name, url }: any) {
           component="img"
           alt="Contemplative Reptile"
           height="250"
-          image="./poke.png"
+          image="./pokemon.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
