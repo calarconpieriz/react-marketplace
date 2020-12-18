@@ -5,7 +5,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import itemReducer from './pages/marketplace/store/item.reducers';
 import SearchAppBar from './shared/components/Navbar';
-import { createMuiTheme } from '@material-ui/core';
+import { createMuiTheme, Divider } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
@@ -29,6 +29,18 @@ function App() {
       <Provider store={store}>
         <ThemeProvider theme={theme}>
           <SearchAppBar />
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '2%',
+            }}
+          >
+            <img src="houm-logo.png" width="100" />
+          </div>
+          <Divider />
           <Switch>
             <Route path="/:name">
               {({ match }: any) => {
