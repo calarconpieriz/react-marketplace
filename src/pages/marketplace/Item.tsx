@@ -11,6 +11,9 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {},
+  name: {
+    textTransform: 'capitalize',
+  },
 });
 
 export default function Item({ name, url }: any) {
@@ -27,7 +30,12 @@ export default function Item({ name, url }: any) {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography
+            className={classes.name}
+            gutterBottom
+            variant="h5"
+            component="h2"
+          >
             {name}
           </Typography>
         </CardContent>
