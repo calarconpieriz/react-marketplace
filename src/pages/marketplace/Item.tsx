@@ -26,8 +26,8 @@ export default function Item({ name, url }: any) {
           component="img"
           alt="Contemplative Reptile"
           height="250"
-          image="./pokemon.jpg"
-          title="Contemplative Reptile"
+          image="react-marketplace/pokemon.jpg"
+          title="Pokemon"
         />
         <CardContent>
           <Typography
@@ -41,7 +41,7 @@ export default function Item({ name, url }: any) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Link to={name}>
+        <Link to={`marketplace/${name}`}>
           <Button size="small" color="primary">
             Ver Detalle
           </Button>

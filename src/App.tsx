@@ -38,18 +38,18 @@ function App() {
               padding: '2%',
             }}
           >
-            <img src="houm-logo.png" width="100" />
+            <img src="react-marketplace/houm-logo.png" width="100" />
           </div>
           <Divider />
           <Switch>
-            <Route path="/:name">
+            <Route path="/marketplace/:name">
               {({ match }: any) => {
                 const { params } = match;
                 return <ItemDetails name={params.name} />;
               }}
             </Route>
-            <Route path="/">{() => <ItemList />}</Route>
-            <Redirect to="/" />
+            <Route path="/marketplace">{() => <ItemList />}</Route>
+            <Redirect to="/marketplace" />
           </Switch>
         </ThemeProvider>
       </Provider>
