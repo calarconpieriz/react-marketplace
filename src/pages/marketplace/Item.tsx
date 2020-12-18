@@ -14,6 +14,9 @@ const useStyles = makeStyles({
   name: {
     textTransform: 'capitalize',
   },
+  link: {
+    color: 'black',
+  },
 });
 
 export default function Item({ name, url }: any) {
@@ -22,23 +25,25 @@ export default function Item({ name, url }: any) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="250"
-          image="react-marketplace/pokemon.jpg"
-          title="Pokemon"
-        />
-        <CardContent>
-          <Typography
-            className={classes.name}
-            gutterBottom
-            variant="h5"
-            component="h2"
-          >
-            {name}
-          </Typography>
-        </CardContent>
+        <Link className={classes.link} to={`marketplace/${name}`}>
+          <CardMedia
+            component="img"
+            alt="Contemplative Reptile"
+            height="250"
+            image="react-marketplace/pokemon.jpg"
+            title="Pokemon"
+          />
+          <CardContent>
+            <Typography
+              className={classes.name}
+              gutterBottom
+              variant="h5"
+              component="h2"
+            >
+              {name}
+            </Typography>
+          </CardContent>
+        </Link>
       </CardActionArea>
       <CardActions>
         <Link to={`marketplace/${name}`}>
