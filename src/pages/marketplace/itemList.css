@@ -1,0 +1,10 @@
+.item-list__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.item-list__fetch-cta {
+  margin-top: 200px;
+}
